@@ -1,7 +1,6 @@
 #!/usr/bin/python
 
 def gettemp(sensor):
-        print '/sys/bus/w1/devices/{0}/w1_slave'.format(sensor)
         f = open('/sys/bus/w1/devices/{0}/w1_slave'.format(sensor),'r')
         l1 = f.readline()
         l2 = f.readline()
